@@ -16,3 +16,6 @@ Introduction to programming in **C** with AlxAfrica.
 
 
 [4-puts.c](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/4-puts.c) - Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line, using puts not printf.
+
+
+[5-printf.c](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/5-printf.c) - Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
