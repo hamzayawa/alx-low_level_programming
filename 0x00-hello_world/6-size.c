@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 /**
  * main is the entry point in C Programming
