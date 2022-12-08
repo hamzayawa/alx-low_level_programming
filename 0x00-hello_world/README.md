@@ -19,3 +19,6 @@ Introduction to programming in **C** with AlxAfrica.
 
 
 [5-printf.c](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/5-printf.c) - Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
+
+
+[6-size.c](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/6-size.c) - Write a C program that prints the size of various types on the computer it is compiled and run on.
