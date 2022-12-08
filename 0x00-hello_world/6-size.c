@@ -1,13 +1,12 @@
 #include <stdio.h>
 /**
- * main is the entry point in C Programming
- * void: means the func main takes no arguments
+ * main - Entry point
  *
- * Return: 0 (Successful output)
+ * Return: always 0
  */
 int main(void)
 {
-  printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
 	printf("Size of an int: %d byte(s)\n", sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
 	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
