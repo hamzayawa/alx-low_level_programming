@@ -1,9 +1,9 @@
 #include <stdio.h>
+
 /**
- * main is the entry point in C Programming
- * void: means the func main takes no arguments
+ * main - Entry point
  *
- * Return: 0 (Successful output)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
