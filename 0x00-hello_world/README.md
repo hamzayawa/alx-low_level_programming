@@ -10,3 +10,6 @@ Introduction to programming in **C** with AlxAfrica.
 
 
 [2-assembler](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/2-assembler) - Write a script that generates the assembly code of a C code and save it in an output file.
+
+
+[3-name](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/3-name) - Write a script that compiles a C file and creates an executable named cisfun.
