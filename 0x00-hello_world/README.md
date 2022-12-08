@@ -7,3 +7,6 @@ Introduction to programming in **C** with AlxAfrica.
 
 
 [1-compiler](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/1-compiler) - Write a script that compiles a C file but does not link.
+
+
+[2-assembler](https://github.com/hamzayawa/alx-low_level_programming/blob/main/0x00-hello_world/2-assembler) - Write a script that generates the assembly code of a C code and save it in an output file.
