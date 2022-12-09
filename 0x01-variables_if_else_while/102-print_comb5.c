@@ -7,9 +7,11 @@
 int main(void)
 {
 	int num1 = 0;
-	int num2 = 0;
+
 	while (num1 < 100)
 	{
+		int num2 = 0;
+
 		while (num2 < 100)
 		{
 			if (num1 < num2)
