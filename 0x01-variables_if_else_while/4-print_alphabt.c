@@ -9,7 +9,7 @@ int main(void)
 
 	while (lcase <= 'z')
 	{
-		if (lcase != 'e' && lcase != 'q')
+		if ( lcase != 'e' && lcase != 'q')
 			putchar (lcase);
 		lcase++;
 	}
