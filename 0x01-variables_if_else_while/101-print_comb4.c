@@ -15,7 +15,7 @@ int main(void)
 		while (num2 < 58)
 		{
 			int num3 = 50;
-			
+
 			while (num3 < 58)
 			{
 				if (num3 > num2 && num2 > num1)
