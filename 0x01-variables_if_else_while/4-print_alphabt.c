@@ -11,10 +11,10 @@ int main(void)
 	{
 		if (lcase != 'e' && lcase != 'q')
 			{
-				putchar(lcase);
+				putchar (lcase);
 			}
 		lcase++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return(0);
 }
