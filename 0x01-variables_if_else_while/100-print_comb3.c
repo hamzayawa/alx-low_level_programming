@@ -1,6 +1,7 @@
 #include <stdio.h>
+
 /**
-  * main - Entry point 
+  * main - Entry point
 	* @while - nested while loop
   *
   * Return: 0 (Success)
@@ -8,8 +9,10 @@
 int main(void)
 {
 	int num1 = 10;
+
 	while (num1 <= 19)
 	{
+
 		int num2 = 10;
 		while (num2 <= 19)
 		{
