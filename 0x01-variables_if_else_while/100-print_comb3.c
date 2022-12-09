@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
   * main - Entry point 
 	* @while - nested while loop
@@ -7,26 +8,27 @@
   */
 int main(void)
 {
-	int num1 = 48;
-	int num2 = 48;
-	while (num1 < 58)
+	int num1 = 0;
+	int num2;
+	while (num1 <= '9')
 	{
-		while (num2 < 58)
+		num2 = num1 + 1;
+		while (num2 <= '9')
 		{
 			if (num2 > num1)
 			{
-				putchar(num1);
-				putchar(num2);
-				if (num1 != 56 || num2 != 57)
+				putchar (num1);
+				putchar (num2);
+				if (num1 == '8' && num2 == '9')
 				{
-					putchar(',');
-					putchar(' ');
+					putchar (',');
+					putchar (' ');
 				}
 			}
 			num2++;
 		}
 		num1++;
 	}
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
