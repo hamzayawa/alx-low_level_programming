@@ -8,11 +8,11 @@ int main(void)
 {
 	int digits = 0;
 
-	while (digits < 10) /*prints all single digit numbers while the digits are less than 10*/
+	while (digits < 10) /*prints all single digit numbers*/
 	{
-		printf("%d", digits); 
+		printf("%d", digits);
 		digits++; /*increment digits by one until it reaches 10 10*/
 	}
-	putchar ('\n'); 
+	putchar ('\n');
 	return (0);
 }
