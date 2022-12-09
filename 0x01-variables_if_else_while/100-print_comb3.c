@@ -12,8 +12,8 @@ int main(void)
 
 	while (num1 <= 19)
 	{
-
 		int num2 = 10;
+
 		while (num2 <= 19)
 		{
 			if ((num2 % 10) > (num1 % 10))
