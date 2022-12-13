@@ -6,10 +6,7 @@
 */
 void times_table(void)
 {
-	int i;
-	int j;
-
-	i = 0;
+	int i = 0, j;
 
 	while (i <= 9)
 	{
@@ -45,5 +42,4 @@ void times_table(void)
 		_putchar('\n');
 		i++;
 	}
-
 }
