@@ -1,5 +1,7 @@
 #include "main.h"
 
+void print_rev(char *);
+
 /**
  * main - check the code
  *
