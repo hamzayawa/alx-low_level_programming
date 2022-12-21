@@ -1,4 +1,4 @@
-# ALXAFRICA Low-Level Programming 
+# ALX AFRICA Low Level Programming 
 ## Data Structures & Algorithms
 
 A low-level programming language is one whose commands or functions closely resemble processor instructions and which offers little to no abstraction from a computer's instruction set architecture.
