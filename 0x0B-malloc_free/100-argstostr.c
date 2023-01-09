@@ -29,22 +29,14 @@ char *argstostr(int ac, char **av)
 	if (str == NULL)
 		return (NULL);
 
-	k = i = 0;
+	k = 0;
 
-	while (av[i])
+	for (i = 0; i < ac; i++)
 	{
-		while (av[i][j])
-		{
-			str[k] = av[i][j];
-			k++;
-			j++;
-		}
+		for (j = 0; av[i][j]; j++)
+			str[k++] = av[i][j];
 
-		str[k] = '\n';
-
-		j = 0;
-		k++;
-		i++;
+		str[k++] = '\n';
 	}
 
 	str[len] = '\0';
