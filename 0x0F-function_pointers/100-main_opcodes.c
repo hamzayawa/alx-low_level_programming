@@ -26,10 +26,12 @@ int main(int argc, char *argv[])
 	}
 	a = (char *)&main;
 	val = atoi(argv[1]);
+	i = 0;
 
-	for (i = 0; i < val -1; i++)
+	while (i < val - 1)
 	{
 		printf("%02hhx ", a[i]);
+		i++;
 	}
 	printf("%02hhx\n", a[i]);
 	return (0);
