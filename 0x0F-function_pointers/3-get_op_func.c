@@ -5,7 +5,7 @@
  * get_op_func - call the proper function.
  * @s: proper function to call.
  *
- * Return: matching operator.
+ * Return: 0.
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -24,5 +24,6 @@ int (*get_op_func(char *s))(int, int)
 		if (*ops[i].op == *s)
 			return (ops[i].f);
 	}
-	return (NULL);
+
+	return (0);
 }
