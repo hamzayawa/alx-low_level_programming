@@ -1,0 +1,41 @@
+name: Python CI/CD
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**.c'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content
+
+      - name: Setup Cpp (C++ / C)
+        uses: aminya/setup-cpp@v0.26.2
+
+      - name: Install cppunit
+        run: sudo apt install -y libcppunit-dev
+
+      - name: configure
+        run: ./configure
+  
+      - name: make
+        run: make
+      
+      - name: make test
+        run: make test
+
+      - name: Check for new C files
+        run: |
+          c_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '\.c$' || true)
+          if [[ -z "$c_files" ]]; then
+            echo "No new C files added"
+          else
+            echo "New C files added: $c_files"
+            exit 1
+          fi
