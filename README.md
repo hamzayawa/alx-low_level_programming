@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/github/commit-activity/m/hamzayawa/alx-low_level_programming?color=blue&style=for-the-badge&logo=github" alt="hamzayawa/alx-low_level_programming pull requests"/>
   </a>
   <a href="https://github.com/hamzayawa/alx-low_level_programming/pulls">
-    <img src="https://img.shields.io/github/last-commit/Barissa-Imran/alx-low_level_programming?color=blue&style=for-the-badge&logo=github" alt="hamzayawa/alx-low_level_programming requests"/>
+    <img src="https://img.shields.io/github/last-commit/hamzayawa/alx-low_level_programming?color=blue&style=for-the-badge&logo=github" alt="hamzayawa/alx-low_level_programming requests"/>
   </a>
 
 </p>
