@@ -20,10 +20,6 @@ jobs:
         compiler:
           - llvm
           - gcc
-          # you can specify the version after `-` like `llvm-13.0.0`.
-        include:
-          - os: "windows-2022"
-            compiler: "msvc"
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content
