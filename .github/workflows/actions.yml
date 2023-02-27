@@ -2,12 +2,13 @@ name: Python CI/CD
 
 on:
   pull_request:
+    branches:
+      - main
+      - master
   push:
     branches:
       - main
       - master
-    paths:
-      - '**.c'
 
 jobs:
   build-and-test:
@@ -52,12 +53,15 @@ jobs:
       - name: Install cppunit
         run: sudo apt install -y libcppunit-dev
 
-      - name: Check for new C files
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v35
+
+      - name: List all changed files
         run: |
-          c_files=$(git diff --name-only ${{ github.event.before }} ${{ github.event.after }} | grep '\.c$' || true)
-          if [[ -z "$c_files" ]]; then
-            echo "No new C files added"
-          fi
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$file was changed"
+          done
 
       - name: Check for changed/modified files
         uses: jitterbit/get-changed-files@v1
@@ -66,3 +70,16 @@ jobs:
             echo "Do something with this ${changed_file}."
           done
 
+      - name: Fetch action
+        id: pl
+        uses: Rishabh510/Path-lister-action@master
+        with:
+          path: ".github/"
+          type: ".yml"
+
+      - name: Output results
+        run: |
+          echo "Found ${{ steps.pl.outputs.path_count }} file(s) with this extension:"
+          for i in ${{ steps.pl.outputs.paths }}; do
+          echo $i
+          done
