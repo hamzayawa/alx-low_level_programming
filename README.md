@@ -18,7 +18,7 @@
   The C programming language</ p>
 </div>
 
-## Data Structures & Algorithms
+## Data Structures and Algorithms
 
 A low-level programming language is one whose commands or functions closely resemble processor instructions and which offers little to no abstraction from a computer's instruction set architecture.
 Typically, either machine code or assembly language is meant.
